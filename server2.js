@@ -1,4 +1,5 @@
 import { createServer } from "http";
+const PORT = process.env.PORT;
 
 const users = [
   { id: 1, name: "John Doe" },
