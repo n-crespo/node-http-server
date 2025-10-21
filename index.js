@@ -1,10 +1,11 @@
 import http from "http";
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 // create a server and write hello world
 const server = http.createServer((req, res) => {
   // res.setHeader("Content-Type", "text/html");
   // res.statusCode = 404;
+
   res.writeHead(500, { "content-type": "application/json" });
   res.end(
     JSON.stringify({
