@@ -8,7 +8,6 @@ console.log("-----");
 console.log(req.url);
 console.log(req.method);
 
-
 // only for post requests (post)
 app.post("/users", () => {
   console.log("this only runs when post request is sent to /users");
@@ -55,6 +54,3 @@ http://localhost:3000/api/users
 > [!NOTE]
 > `PUT`, `PATCH`, and `DELETE` requests are pretty much the same as above but
 > with that method specified after the `-X` flag.
-
-at 1:03:50 in
-[Node.js Crash Course](https://www.youtube.com/watch?v=32M1al-Y6Ag)
